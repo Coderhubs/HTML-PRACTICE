@@ -1,0 +1,64 @@
+h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+.one,.two, .three , .four , .five , .Six , .seven{
+    font-size: 14px;
+    width: 60px;
+    height: auto;
+  
+}
+
+.eight{
+    font-size: 14px;
+    width: 80px;
+    height: auto;
+    background-color: palevioletred;
+
+}
+
+.nine{
+    font-size: 13.5px;
+    width: 60px;
+    height: auto;
+    background-color: palevioletred;
+
+}
+
+.orange{
+    background-color: #fd724c;
+}
+
+.purple{
+    background-color: blueviolet;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.pink{
+    background-color: palevioletred;
+}
+
+
+.yellow{
+    background-color: rgb(251, 198, 9);
+}
+
+.green{
+    background-color: rgb(35, 145, 35);
+}
+
+.brown{
+    background-color: rgb(206, 68, 68);
+}
+
+.orangered{
+    background-color: orangered;
+}
+

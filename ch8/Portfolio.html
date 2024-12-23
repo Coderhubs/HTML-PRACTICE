@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+           @media (max-width: 768px) {
+         
+         nav div {
+             
+             display: flex;
+         height: auto;
+         align-items: center;
+         justify-content: space-between;
+         padding: 10px;
+         max-width: 100%;
+         }
+
+         ul {
+            
+             align-items: center;
+             padding-right: 0;
+             gap: 10px; 
+         }
+
+         img[alt="logo"] {
+             height: auto;
+             width: 80px; /* Adjust logo size */
+             margin-bottom: 10px; /* Space between logo and menu */
+         }
+     }
+
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            align-items: center;
+        
+        }
+
+        .image {
+            width: 40%;
+            height: 30vh;
+            margin-right: 20px;
+            margin-top: 30px;
+        }
+
+        .text {
+            width: 50%;
+            text-align: justify;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav style="background-color: steelblue;  
+    border-radius: 20px; border: 2px solid rgb(25, 81, 138);  z-index: -1; overflow:hidden;">
+        <!-- logo -->
+         <div style="display: flex; height: auto;" >
+         <img src="logo.png" alt="logo">
+
+        
+         <ul style="display: flex; list-style: none; width: 100%; align-items: center; justify-content: space-around; padding-right: 100px; ">
+
+            <li><a href="/" style=" padding: 0px; gap: 0 ;text-decoration: none; color: black;font-size: 18px; font-family: sans-serif;">Home</a></li>
+
+            <li>
+                <a href="about.html" target="_blank" style=" padding: 0px;gap: 0;text-decoration: none; color: black; font-size: 18px; font-family: sans-serif; ">About</a></li>
+
+            <li><a href="Portfolio.html" target="_blank " style="padding: 0px; gap:0; text-decoration: none; color: black; font-size: 18px; font-family: sans-serif; ">Portfolio</a></li>
+
+            <li><a href="contact.html" target="_blank " style=" gap: 0; padding: 0px;text-decoration: none; color: black; font-size: 18px; font-family: sans-serif; ">Contact</a></li>
+        </ul>
+    </div>
+ </nav>
+
+
+    <div class="container">
+        <img src="p.jpeg" alt="image" class="image">
+        <div class="text">
+            <p><b>Why it&#39;s special:</b> Robby incorporates an interactive experience into 
+                his portfolio.<br>
+               <b> What it&#39;s about:</b> If you associate portfolios with a dry list of facts, 
+                this portfolio might surprise you. Robby found a novel way of 
+                displaying what was otherwise dry information — he laid out his 
+                portfolio site as a videogame that the visitor can actually play. This 
+                incredibly fun interactive design portfolio will make you scroll … 
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="p.jpeg" alt="image" class="image">
+        <div class="text">
+            <p><b>Why it&#39;s special:</b> Robby incorporates an interactive experience into 
+                his portfolio.<br>
+               <b> What it&#39;s about:</b> If you associate portfolios with a dry list of facts, 
+                this portfolio might surprise you. Robby found a novel way of 
+                displaying what was otherwise dry information — he laid out his 
+                portfolio site as a videogame that the visitor can actually play. This 
+                incredibly fun interactive design portfolio will make you scroll … 
+            </p>
+        </div>
+    </div>
+    <div style="background-color: steelblue; display: flex;
+    align-items: center; justify-content: center; padding: 0;font-size: 11px; height: 20px;">
+       <footer>
+        <p> copyright &copy; 2019. All rights reserved </p>
+       </footer>
+</body>
+</html>

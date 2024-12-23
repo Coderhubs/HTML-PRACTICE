@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Make nav links stack vertically on smaller screens */
+        @media (max-width: 768px) {
+         
+            nav div {
+                
+                display: flex;
+            height: auto;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            max-width: 100%;
+            }
+
+            ul {
+               
+                align-items: center;
+                padding-right: 0;
+                gap: 10px; 
+            }
+
+            img[alt="logo"] {
+                height: auto;
+                width: 80px; /* Adjust logo size */
+                margin-bottom: 10px; /* Space between logo and menu */
+            }
+        }
+
+        /* Adjust hero image height on smaller screens */
+        @media (max-width: 768px) {
+            img[alt="hero"] {
+                height: auto; /* Allow height to adjust based on width */
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav style="background-color: steelblue;  
+    border-radius: 20px; border: 2px solid rgb(25, 81, 138);  z-index: -1; overflow:hidden;">
+        <!-- logo -->
+         <div style="display: flex; height: auto;" >
+         <img src="logo.png" alt="logo">
+
+        
+         <ul style="display: flex; list-style: none; width: 100%; align-items: center; justify-content: space-around; padding-right: 100px; ">
+
+            <li><a href="/" style=" padding: 0px; gap: 0 ;text-decoration: none; color: black;font-size: 18px; font-family: sans-serif;">Home</a></li>
+
+            <li>
+                <a href="about.html" target="_blank" style=" padding: 0px;gap: 0;text-decoration: none; color: black; font-size: 18px; font-family: sans-serif; ">About</a></li>
+
+            <li><a href="Portfolio.html" target="_blank " style="padding: 0px; gap:0; text-decoration: none; color: black; font-size: 18px; font-family: sans-serif; ">Portfolio</a></li>
+
+            <li><a href="contact.html" target="_blank " style=" gap: 0; padding: 0px;text-decoration: none; color: black; font-size: 18px; font-family: sans-serif; ">Contact</a></li>
+        </ul>
+    </div>
+ </nav>
+
+ <div  style="max-width: 100%; height: auto; border: 3px solid black; margin-top: 20px;">
+    <!-- Hero Section -->
+     <img src="body.jpg" alt="hero" width="100%" height="400px">
+ </div>
+ <div style="justify-content: center; align-items: center;
+ ">
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, earum dolor quis distinctio voluptatem commodi magni deserunt ipsum numquam alias veniam quo exercitationem optio accusantium quidem necessitatibus ipsa dolorum suscipit.
+    Animi temporibus at quisquam quas nesciunt non vero distinctio eaque corrupti. Vero culpa facere aspernatur natus, quos doloremque quisquam doloribus repellendus. Voluptatibus non alias earum consequuntur voluptas omnis modi ullam!</p>
+ </div>
+
+ <div style="background-color: steelblue; display: flex;
+ align-items: center; justify-content: center; padding: 0;font-size: 11px; height: 20px;">
+    <footer>
+     <p> copyright &copy; 2019. All rights reserved </p>
+    </footer>
+ </div>
+</body>
+</html>

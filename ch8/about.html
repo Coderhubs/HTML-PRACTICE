@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        /* Styling the hero section */
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        /* Styling the content section */
+        .content {
+            width: 60%;
+            text-align: justify;
+            font-size: 14px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        /* Remove margin and padding from paragraphs */
+        .content p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-p {
+            width: 100%;
+            font-size: 14px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            align-items: center;
+            
+
+        }
+
+        /* Remove margin and padding from paragraphs */
+        .content-p p {
+            margin: 0;
+            padding: 0;
+            
+        }
+        /* Styling the profile image container */
+        .profile-container {
+            position: relative;
+            width: 35%;
+            height: 150px;
+            border: 2px solid rgb(39, 104, 169);
+            border-radius: 20px;
+            background-color: steelblue;
+            z-index: 1;
+            margin-bottom: 0px;
+        }
+
+        .profile-container p {
+            padding: 50px;
+            text-align: center;
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+         
+         nav div {
+             
+             display: flex;
+         height: auto;
+         align-items: center;
+         justify-content: space-between;
+         padding: 10px;
+         max-width: 100%;
+         }
+
+         ul {
+            
+             align-items: center;
+             padding-right: 0;
+             gap: 10px; 
+         }
+
+         img[alt="logo"] {
+             height: auto;
+             width: 80px; /* Adjust logo size */
+             margin-bottom: 10px; /* Space between logo and menu */
+         }
+     }
+
+
+        /* Center the iframe container */
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Makes sure it's full viewport height */
+            margin: 0;
+        }
+
+        /* Styling the iframe (you can replace it with an image) */
+        iframe {
+            border: 2px solid steelblue;
+            border-radius: 20px;
+            width: 60%;
+            height: 60vh;
+            margin: 0;
+            z-index: 1;
+            background-color: steelblue;
+            padding: 10px;
+        }
+
+        /* Center the image inside the iframe (for image solution) */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav style="background-color: steelblue;  
+    border-radius: 20px; border: 2px solid rgb(25, 81, 138);  z-index: -1; overflow:hidden;">
+        <!-- logo -->
+         <div style="display: flex; height: auto;" >
+         <img src="logo.png" alt="logo">
+
+        
+         <ul style="display: flex; list-style: none; width: 100%; align-items: center; justify-content: space-around; padding-right: 100px; ">
+
+            <li><a href="/" style=" padding: 0px; gap: 0 ;text-decoration: none; color: black;font-size: 18px; font-family: sans-serif;">Home</a></li>
+
+            <li>
+                <a href="about.html" target="_blank" style=" padding: 0px;gap: 0;text-decoration: none; color: black; font-size: 18px; font-family: sans-serif; ">About</a></li>
+
+            <li><a href="Portfolio.html" target="_blank " style="padding: 0px; gap:0; text-decoration: none; color: black; font-size: 18px; font-family: sans-serif; ">Portfolio</a></li>
+
+            <li><a href="contact.html" target="_blank " style=" gap: 0; padding: 0px;text-decoration: none; color: black; font-size: 18px; font-family: sans-serif; ">Contact</a></li>
+        </ul>
+    </div>
+ </nav>
+
+    <!-- Hero section (Content and Profile Image) -->
+    <div class="hero-section">
+        <!-- Content section -->
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non suscipit, earum repellat officiis voluptates eius porro doloremque at delectus, nihil ipsam ex aut laudantium incidunt! Dolorum id quod ab cum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloribus! Labore porro quod aliquam nisi rem mollitia modi ut nostrum magnam officia ipsam voluptatibus at animi architecto, repudiandae doloribus quidem?
+                Itaque, necessitatibus? Recusandae totam nulla rem, similique neque voluptates, fugit cumque veniam nesciunt, minima eum porro suscipit est? Blanditiis quidem corrupti rerum consectetur ut ipsum, minima aliquam necessitatibus esse amet!
+                Et hic nemo animi natus, inventore aut distinctio rerum quam, dolor ab similique officiis obcaecati error eligendi? Rerum minima nesciunt nulla dolore pariatur nobis, laborum dolorem tempore, non, eaque maxime!
+                Dolore, harum inventore ipsa nemo praesentium, perspiciatis deleniti et corrupti modi provident corporis neque minus animi eum laborum assumenda mollitia ullam vitae? Atque sed veritatis pariatur ullam, minus consequatur excepturi.
+            </p>
+        </div>
+
+        <!-- Profile image section (right side) -->
+        <div class="profile-container">
+            <p>Profile Image</p>
+        </div>
+    </div>
+
+    <!-- Additional Content -->
+    <div class="content-p">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odio pariatur similique neque inventore quia aut cum obcaecati. Fugiat placeat minima recusandae enim hic autem facilis incidunt nihil ab nulla!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, veritatis labore! Error modi similique iste cumque illum et dolores repellat, itaque pariatur, natus nesciunt quod impedit, beatae laudantium doloremque accusantium!
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+            </head>
+            <body>
+                
+            </body>
+            </html>
+        </p>
+    </div>
+
+    <!-- Centered Image -->
+    <div class="iframe-container">
+        <!-- Instead of iframe, use an image for better accessibility -->
+        <div class="image-container" style="border: 2px solid rgb(27, 77, 118); width:80%; height: 60vh; background-color: steelblue; border-radius: 100px; margin-top: 0px;">
+         
+            <div style="background-color: white; object-fit: cover; clip-path: inset(30% 0 30% 0);">
+            <img src="yt.png" alt="Image">
+        </div>
+   
+        </div>
+    </div>
+
+    <div style="background-color: steelblue; display: flex; align-items: center; justify-content: center; padding: 0;font-size: 11px; height: 20px; margin-top: 0px;">
+        <footer>
+            <p> copyright &copy; 2019. All rights reserved </p>
+        </footer>
+    </div>
+</body> 
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Base styles */
+        @media (max-width: 768px) {
+         
+         nav div {
+             
+             display: flex;
+         height: auto;
+         align-items: center;
+         justify-content: space-between;
+         padding: 10px;
+         max-width: 100%;
+         }
+
+         ul {
+            
+             align-items: center;
+             padding-right: 0;
+             gap: 10px; 
+         }
+
+         img[alt="logo"] {
+             height: auto;
+             width: 80px; /* Adjust logo size */
+             margin-bottom: 10px; /* Space between logo and menu */
+         }
+     }
+
+          
+
+        /* Form and footer styles */
+        form input[type="text"],
+        form input[type="email"] {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+      
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding-right: 0;
+            }
+
+            nav ul li {
+                padding: 5px 0;
+            }
+
+            .map-container img {
+                width: 100%;
+                height: auto;
+            }
+
+            form input[type="text"],
+            form input[type="email"] {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul li a {
+                font-size: 16px;
+            }
+
+            form fieldset {
+                padding: 10px;
+            }
+
+        
+        }
+    </style>
+</head>
+
+<body>
+
+<nav style="background-color: steelblue;  
+    border-radius: 20px; border: 2px solid rgb(25, 81, 138);  z-index: -1; overflow:hidden;">
+        <!-- logo -->
+         <div style="display: flex; height: auto;" >
+         <img src="logo.png" alt="logo">
+
+        
+         <ul style="display: flex; list-style: none; width: 100%; align-items: center; justify-content: space-around; padding-right: 100px; ">
+
+            <li><a href="/" style=" padding: 0px; gap: 0 ;text-decoration: none; color: black;font-size: 18px; font-family: sans-serif;">Home</a></li>
+
+            <li>
+                <a href="about.html" target="_blank" style=" padding: 0px;gap: 0;text-decoration: none; color: black; font-size: 18px; font-family: sans-serif; ">About</a></li>
+
+            <li><a href="Portfolio.html" target="_blank " style="padding: 0px; gap:0; text-decoration: none; color: black; font-size: 18px; font-family: sans-serif; ">Portfolio</a></li>
+
+            <li><a href="contact.html" target="_blank " style=" gap: 0; padding: 0px;text-decoration: none; color: black; font-size: 18px; font-family: sans-serif; ">Contact</a></li>
+        </ul>
+    </div>
+ </nav>
+
+<div style="margin-top: 30px;">
+    <h1>Contact</h1>
+    <form action="/action_page.php" method="get">
+        <fieldset> 
+            <legend>Your Details</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" value="Your name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="your email">
+        </fieldset>
+        <br>
+        <fieldset> 
+            <legend>Your Review</legend>
+            <label for="browser">How did you hear about us?</label>
+            <input list="browsers" name="browser" id="browser" placeholder="Select or type an option">
+            <datalist id="browsers">
+                <option value="Social Media">
+                <option value="Friends">
+                <option value="Self">
+            </datalist>
+            <br><br>
+            <label for="Review">Would you visit again?</label><br> 
+            <label><input type="radio" name="visit"> Yes</label>
+            <label><input type="radio" name="visit"> No</label>
+            <label><input type="radio" name="visit"> Maybe</label><br><br>
+
+            <label>Comments:</label><br>
+            <input type="text" style="width: 100%; max-width: 300px; height: 40px;"><br><br>
+            <label><input type="checkbox"> Sign me up for email updates</label><br>
+
+            <button>Submit review</button>
+        </fieldset>
+    </form>
+</div>
+
+<div class="map-container" style="margin-top: 30px;">
+    <img src="map.jpeg" alt="map" style="width: 100%; height: 40vh; clip-path: inset(1px 1px 1px 1px);">
+</div>
+
+<div style="background-color: steelblue; display: flex; align-items: center; justify-content: center; padding: 0;font-size: 11px; height: 20px; margin-top: 20px;">
+    <footer>
+        <p> copyright &copy; 2019. All rights reserved </p>
+    </footer>
+
+</body>
+</html>
